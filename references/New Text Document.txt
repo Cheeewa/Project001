@@ -1,0 +1,35 @@
+https://pillow.readthedocs.io/en/stable/reference/Image.html
+> tcpdump -e -n | grep 141.48.3.149
+1) 12:10:46.633145 00:1f:c6:8d:a0:94 > 00:0c:cf:32:90:0a, ethertype IPv4 (0x0800), length 74:
+141.48.9.230.44593 > 141.48.3.149.80: Flags [S], seq 3665960671, win 5840,
+options [mss 1460,sackOK,TS val 45609344 ecr 0,nop,wscale 6], length 0
+2) 12:10:46.633729 00:0c:cf:32:90:0a > 00:1f:c6:8d:a0:94, ethertype IPv4 (0x0800), length 74:
+141.48.3.149.80 > 141.48.9.230.44593: Flags [S.], seq 1364016075, ack 3665960672, win 24624,
+options [nop,nop,TS val 916559319 ecr 45609344,nop,wscale 0,mss 1380], length 0
+3) 12:10:46.633745 00:1f:c6:8d:a0:94 > 00:0c:cf:32:90:0a, ethertype IPv4 (0x0800), length 66:
+141.48.9.230.44593 > 141.48.3.149.80: Flags [.], ack 1, win 92,
+options [nop,nop,TS val 45609344 ecr 916559319], length 0
+4) 12:10:46.633797 00:1f:c6:8d:a0:94 > 00:0c:cf:32:90:0a, ethertype IPv4 (0x0800), length 975:
+141.48.9.230.44593 > 141.48.3.149.80: Flags [P.], seq 1:910, ack 1, win 92,
+options [nop,nop,TS val 45609344 ecr 916559319], length 909
+5) 12:10:46.634476 00:0c:cf:32:90:0a > 00:1f:c6:8d:a0:94, ethertype IPv4 (0x0800), length 66:
+141.48.3.149.80 > 141.48.9.230.44593: Flags [.], ack 910, win 24624,
+options [nop,nop,TS val 916559319 ecr 45609344], length 0
+6) 12:10:46.642155 00:0c:cf:32:90:0a > 00:1f:c6:8d:a0:94, ethertype IPv4 (0x0800), length 349:
+141.48.3.149.80 > 141.48.9.230.44593: Flags [P.], seq 1:284, ack 910, win 24624,
+options [nop,nop,TS val 916559320 ecr 45609344], length 283
+7) 12:10:46.642164 00:1f:c6:8d:a0:94 > 00:0c:cf:32:90:0a, ethertype IPv4 (0x0800), length 66:
+141.48.9.230.44593 > 141.48.3.149.80: Flags [.], ack 284, win 108,
+options [nop,nop,TS val 45609346 ecr 916559320], length 0
+8) 12:11:02.836672 00:0c:cf:32:90:0a > 00:1f:c6:8d:a0:94, ethertype IPv4 (0x0800), length 66:
+141.48.3.149.80 > 141.48.9.230.44593: Flags [F.], seq 284, ack 910, win 24624,
+options [nop,nop,TS val 916560940 ecr 45609346], length 0
+9) 12:11:02.876291 00:1f:c6:8d:a0:94 > 00:0c:cf:32:90:0a, ethertype IPv4 (0x0800), length 66:
+141.48.9.230.44593 > 141.48.3.149.80: Flags [.], ack 285, win 108,
+options [nop,nop,TS val 45613405 ecr 916560940], length 0
+10) 12:11:13.444287 00:1f:c6:8d:a0:94 > 00:0c:cf:32:90:0a, ethertype IPv4 (0x0800), length 66:
+141.48.9.230.44593 > 141.48.3.149.80: Flags [F.], seq 910, ack 285, win 108,
+options [nop,nop,TS val 45616046 ecr 916560940], length 0
+11) 12:11:13.444570 00:0c:cf:32:90:0a > 00:1f:c6:8d:a0:94, ethertype IPv4 (0x0800), length 66:
+141.48.3.149.80 > 141.48.9.230.44593: Flags [.], ack 911, win 24624,
+options [nop,nop,TS val 916562000 ecr 45616046], length 0

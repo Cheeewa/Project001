@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cheewawit Chawalaworn">
+    <meta name="description" content="alpha version of morpho.io with static image size and one operator">
+
+    <title>Morpho.io</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--import framework-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--import jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--import javascript prebuilt library-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Morpho.io</h1>
+        </div>
+        
+    
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+
+        <div class="row">
+            <div class="col-md-5 col-xs-12 img"> 
+                <table id="image">
+                    <tr>
+                        <td class="ip" id="i00"></td>
+                        <td class="ip" id="i01"></td>
+                        <td class="ip" id="i02"></td>
+                        <td class="ip" id="i03"></td>
+                        <td class="ip" id="i04"></td>
+                    </tr>
+                    <tr>
+                        <td class="ip" id="i10"></td>
+                        <td class="ip" id="i11"></td>
+                        <td class="ip" id="i12"></td>
+                        <td class="ip" id="i13"></td>
+                        <td class="ip" id="i14"></td>
+                    </tr>
+                    <tr>
+                        <td class="ip" id="i20"></td>
+                        <td class="ip" id="i21"></td>
+                        <td class="ip" id="i22"></td>
+                        <td class="ip" id="i23"></td>
+                        <td class="ip" id="i24"></td>
+                    </tr>
+                    <tr>
+                        <td class="ip" id="i30"></td>
+                        <td class="ip" id="i31"></td>
+                        <td class="ip" id="i32"></td>
+                        <td class="ip" id="i33"></td>
+                        <td class="ip" id="i34"></td>
+                    </tr>
+                    <tr>
+                        <td class="ip" id="i40"></td>
+                        <td class="ip" id="i41"></td>
+                        <td class="ip" id="i42"></td>
+                        <td class="ip" id="i43"></td>
+                        <td class="ip" id="i44"></td>
+                    </tr>
+                </table> 
+                <button id="reIm" type="button" class="btn btn-warning">reset image</button> 
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <button type="button" id="dropdownMenuButton" class="btn btn-primary dropdown-toggle" data-toggle
+                ="dropdown">Select operator</button>
+                
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-header">Header</a>
+                    <a class="dropdown-item" href="#" id="ero">Erosion</a>
+                    <a class="dropdown-item" href="#" id="dil">Dilation</a>
+                    <a class="dropdown-item" href="#">Option 3</a>
+                </div>
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">description</div>
+                    <div class="panel-body">Lorem ipsum kuy hee tad</div>
+                </div>
+                <table id="outputImg">
+                    <tr>
+                        <td class="output" id="op0"></td>
+                        <td class="output" id="op1"></td>
+                        <td class="output" id="op2"></td>
+                        <td class="output" id="op3"></td>
+                        <td class="output" id="op4"></td>
+                    </tr>
+                    <tr>
+                        <td class="output" id="op5"></td>
+                        <td class="output" id="op6"></td>
+                        <td class="output" id="op7"></td>
+                        <td class="output" id="op8"></td>
+                        <td class="output" id="op9"></td>
+                    </tr>
+                    <tr>
+                        <td class="output" id="op10"></td>
+                        <td class="output" id="op11"></td>
+                        <td class="output" id="op12"></td>
+                        <td class="output" id="op13"></td>
+                        <td class="output" id="op14"></td>
+                    </tr>
+                    <tr>
+                        <td class="output" id="op15"></td>
+                        <td class="output" id="op16"></td>
+                        <td class="output" id="op17"></td>
+                        <td class="output" id="op18"></td>
+                        <td class="output" id="op19"></td>
+                    </tr>
+                    <tr>
+                        <td class="output" id="op20"></td>
+                        <td class="output" id="op21"></td>
+                        <td class="output" id="op22"></td>
+                        <td class="output" id="op23"></td>
+                        <td class="output" id="op24"></td>
+                    </tr>
+                </table> 
+            </div>
+            <div class="col-md-4 col-xs-12 opr"> 
+                <table id="operator">
+                    <tr>
+                        <td class="op" id="o00"></td>
+                        <td class="op" id="o01"></td>
+                        <td class="op" id="o02"></td>
+                    </tr>
+                    <tr>
+                        <td class="op" id="o10"></td>
+                        <td class="op" id="o11"></td>
+                        <td class="op" id="o12"></td>
+                    </tr>
+                    <tr>
+                        <td class="op" id="o20"></td>
+                        <td class="op" id="o21"></td>
+                        <td class="op" id="o22"></td>
+                    </tr>
+                </table>
+                <!--<button id="crOp" type="button" class="btn btn-default" >lock edit</button>-->
+                <button id="reOp" type="button" class="btn btn-warning" >reset operator</button>
+                <hr/>
+                <button title="Please save operator and Image!" type="button" class="btn btn-success btn-lg" id="oprt" >Operate!</button>
+                <button type="button" class="btn btn-danger btn-lg" id="rst" >reset</button>
+                <!--<button title="Please save operator and Image!" type="button" class="btn btn-primary btn-lg" onclick="init()" >Start</button>-->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
